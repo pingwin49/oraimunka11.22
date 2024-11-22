@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    grid-area: he;
+}
+nav{
+    grid-area: na;
+}
+aside#bal{
+    grid-area: ab;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+aside#jobb{
+    grid-area: aj;
+}
+footer{
+    grid-area: fo;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'he he'
+    'na na'
+    'ab aj'
+    'fo fo'
+    ;
+
+}
+
+#jobb>img{
+    height: 250px;
+    width: auto;
+}
